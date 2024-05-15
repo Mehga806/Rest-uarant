@@ -1,0 +1,92 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Debug Docker
+        run: docker info
+
+      - name: Pull Jekyll Build Image
+        run: docker pull ghcr.io/actions/jekyll-build-pages:v1.0.12
+
+      - name: Run Jekyll Build
+        run: |
+          docker run --name ghcrioactionsjekyllbuildpagesv1012_4e1296 \
+          --label 844f6f \
+          --workdir /github/workspace \
+          --rm \
+          -e "INPUT_SOURCE=${{ secrets.INPUT_SOURCE }}" \
+          -e "INPUT_DESTINATION=${{ secrets.INPUT_DESTINATION }}" \
+          -e "INPUT_FUTURE=${{ secrets.INPUT_FUTURE }}" \
+          -e "INPUT_BUILD_REVISION=${{ secrets.INPUT_BUILD_REVISION }}" \
+          -e "INPUT_VERBOSE=${{ secrets.INPUT_VERBOSE }}" \
+          -e "INPUT_TOKEN=${{ secrets.INPUT_TOKEN }}" \
+          -e "HOME=${{ env.HOME }}" \
+          -e "GITHUB_JOB=${{ env.GITHUB_JOB }}" \
+          -e "GITHUB_REF=${{ env.GITHUB_REF }}" \
+          -e "GITHUB_SHA=${{ env.GITHUB_SHA }}" \
+          -e "GITHUB_REPOSITORY=${{ env.GITHUB_REPOSITORY }}" \
+          -e "GITHUB_REPOSITORY_OWNER=${{ env.GITHUB_REPOSITORY_OWNER }}" \
+          -e "GITHUB_REPOSITORY_OWNER_ID=${{ env.GITHUB_REPOSITORY_OWNER_ID }}" \
+          -e "GITHUB_RUN_ID=${{ env.GITHUB_RUN_ID }}" \
+          -e "GITHUB_RUN_NUMBER=${{ env.GITHUB_RUN_NUMBER }}" \
+          -e "GITHUB_RETENTION_DAYS=${{ env.GITHUB_RETENTION_DAYS }}" \
+          -e "GITHUB_RUN_ATTEMPT=${{ env.GITHUB_RUN_ATTEMPT }}" \
+          -e "GITHUB_ACTOR_ID=${{ env.GITHUB_ACTOR_ID }}" \
+          -e "GITHUB_ACTOR=${{ env.GITHUB_ACTOR }}" \
+          -e "GITHUB_WORKFLOW=${{ env.GITHUB_WORKFLOW }}" \
+          -e "GITHUB_HEAD_REF=${{ env.GITHUB_HEAD_REF }}" \
+          -e "GITHUB_BASE_REF=${{ env.GITHUB_BASE_REF }}" \
+          -e "GITHUB_EVENT_NAME=${{ env.GITHUB_EVENT_NAME }}" \
+          -e "GITHUB_SERVER_URL=${{ env.GITHUB_SERVER_URL }}" \
+          -e "GITHUB_API_URL=${{ env.GITHUB_API_URL }}" \
+          -e "GITHUB_GRAPHQL_URL=${{ env.GITHUB_GRAPHQL_URL }}" \
+          -e "GITHUB_REF_NAME=${{ env.GITHUB_REF_NAME }}" \
+          -e "GITHUB_REF_PROTECTED=${{ env.GITHUB_REF_PROTECTED }}" \
+          -e "GITHUB_REF_TYPE=${{ env.GITHUB_REF_TYPE }}" \
+          -e "GITHUB_WORKFLOW_REF=${{ env.GITHUB_WORKFLOW_REF }}" \
+          -e "GITHUB_WORKFLOW_SHA=${{ env.GITHUB_WORKFLOW_SHA }}" \
+          -e "GITHUB_REPOSITORY_ID=${{ env.GITHUB_REPOSITORY_ID }}" \
+          -e "GITHUB_TRIGGERING_ACTOR=${{ env.GITHUB_TRIGGERING_ACTOR }}" \
+          -e "GITHUB_WORKSPACE=${{ env.GITHUB_WORKSPACE }}" \
+          -e "GITHUB_ACTION=${{ env.GITHUB_ACTION }}" \
+          -e "GITHUB_EVENT_PATH=${{ env.GITHUB_EVENT_PATH }}" \
+          -e "GITHUB_ACTION_REPOSITORY=${{ env.GITHUB_ACTION_REPOSITORY }}" \
+          -e "GITHUB_ACTION_REF=${{ env.GITHUB_ACTION_REF }}" \
+          -e "GITHUB_PATH=${{ env.GITHUB_PATH }}" \
+          -e "GITHUB_ENV=${{ env.GITHUB_ENV }}" \
+          -e "GITHUB_STEP_SUMMARY=${{ env.GITHUB_STEP_SUMMARY }}" \
+          -e "GITHUB_STATE=${{ env.GITHUB_STATE }}" \
+          -e "GITHUB_OUTPUT=${{ env.GITHUB_OUTPUT }}" \
+          -e "RUNNER_OS=${{ env.RUNNER_OS }}" \
+          -e "RUNNER_ARCH=${{ env.RUNNER_ARCH }}" \
+          -e "RUNNER_NAME=${{ env.RUNNER_NAME }}" \
+          -e "RUNNER_ENVIRONMENT=${{ env.RUNNER_ENVIRONMENT }}" \
+          -e "RUNNER_TOOL_CACHE=${{ env.RUNNER_TOOL_CACHE }}" \
+          -e "RUNNER_TEMP=${{ env.RUNNER_TEMP }}" \
+          -e "RUNNER_WORKSPACE=${{ env.RUNNER_WORKSPACE }}" \
+          -e "ACTIONS_RUNTIME_URL=${{ env.ACTIONS_RUNTIME_URL }}" \
+          -e "ACTIONS_RUNTIME_TOKEN=${{ env.ACTIONS_RUNTIME_TOKEN }}" \
+          -e "ACTIONS_CACHE_URL=${{ env.ACTIONS_CACHE_URL }}" \
+          -e "ACTIONS_ID_TOKEN_REQUEST_URL=${{ env.ACTIONS_ID_TOKEN_REQUEST_URL }}" \
+          -e "ACTIONS_ID_TOKEN_REQUEST_TOKEN=${{ env.ACTIONS_ID_TOKEN_REQUEST_TOKEN }}" \
+          -e "ACTIONS_RESULTS_URL=${{ env.ACTIONS_RESULTS_URL }}" \
+          -e GITHUB_ACTIONS=true \
+          -e CI=true \
+          -v "/var/run/docker.sock":"/var/run/docker.sock" \
+          -v "/home/runner/work/_temp/_github_home":"/github/home" \
+          -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" \
+          -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" \
+          -v "/home/runner/work/Rest-uarant/Rest-uarant":"/github/workspace" \
+          ghcr.io/actions/jekyll-build-pages:v1.0.12
