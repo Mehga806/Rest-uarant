@@ -1,0 +1,352 @@
+{
+  "restaurants": [
+    {
+      "id": "2",
+      "name": "Roasted Parsnips",
+      "neighbourhood": "Hesliart",
+      "photograph": "https://www.dinneratthezoo.com/wp-content/uploads/2020/11/roasted-parsnips-4.jpg",
+      "address": "Kannothum chaal , kannur town",
+      "latlng": {
+        "lat": 40.683555,
+        "lng": -73.966393
+      },
+      "cuisine_type": "Asian",
+      "operating_hours": {
+        "Monday": "5:30 pm - 11:00 pm",
+        "Tuesday": "5:30 pm - 11:00 pm",
+        "Wednesday": "5:30 pm - 11:00 pm",
+        "Thursday": "5:30 pm - 11:00 pm",
+        "Friday": "5:30 pm - 11:00 pm",
+        "Saturday": "5:00 pm - 11:30 pm",
+        "Sunday": "12:00 pm - 3:00 pm, 5:00 pm - 11:00 pm"
+      },
+      "reviews": [
+        {
+          "name": "Sam",
+          "date": "October 26, 2016",
+          "rating": 3.5,
+          "comments": "5 star atmosphere as it is very cozy with great staff. 5 star food as their Emmy burger is outrageously good. and its on a pretzel bun.. Too juicy for its own good and downright addicting. Also try the Colony pizza. Many others looked like worth competitors, but the Colony really found its way to my heart. when you start with a great crust, top it with top notch cheese and sauce, you've got a winner. But, if you go a step further and add the salty from the pepperoni, the sweet from the honey, and the spicy from the chili oil.... your mouth is confused and happy at the same time."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Kang Ho Dong MeatLoaf",
+      "neighbourhood": "The Cozy cahcherrm",
+      "photograph": "https://th.bing.com/th/id/OIP.Yk9RpmBHySAlxdw5hqEPSAHaLH?&rs=1&pid=ImgDetMain",
+      "address": "1 E 32nd St Iritty Near Amala Hospital  NY 10016",
+      "latlng": {
+        "lat": 40.747143,
+        "lng": -73.985414
+      },
+      "cuisine_type": "Asian",
+      "operating_hours": {
+        "Monday": "11:30 am - 2:00 am",
+        "Tuesday": "11:30 am - 2:00 am",
+        "Wednesday": "11:30 am - 2:00 am",
+        "Thursday": "11:30 am - 2:00 am",
+        "Friday": "11:30 am - 6:00 am",
+        "Saturday": "11:30 am - 6:00 am",
+        "Sunday": "11:30 am - 2:00 am"
+      },
+      "reviews": [
+        {
+          "name": "Emily",
+          "date": "October 26, 2016",
+          "rating": 2.5,
+          "comments": "MEH. I've tried their Jersey location as well but Kang Ho Dong meat quality is severely decreasing. A Korean bbq place with whatever meat? I think NOT!"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Katz's Delicatessen",
+      "neighbourhood": "GastroSenses",
+      "photograph": "https://i0.wp.com/www.gastrosenses.com/wp-content/uploads/2016/03/Savory-Fried-Pirozhki-3.jpg?quality=100&strip=all&ssl=1",
+      "address": "Downtown junstion near Thalasseri Busstand ",
+      "latlng": {
+        "lat": 40.722216,
+        "lng": -73.987501
+      },
+      "cuisine_type": "American",
+      "operating_hours": {
+        "Monday": "8:00 am - 10:30 pm",
+        "Tuesday": "8:00 am - 10:30 pm",
+        "Wednesday": "8:00 am - 10:30 pm",
+        "Thursday": "8:00 am - 2:30 am",
+        "Friday": "8:00 am - Sat",
+        "Saturday": "Open 24 hours",
+        "Sunday": "Sat - 10:30 pm"
+      },
+      "reviews": [
+        {
+          "name": "David",
+          "date": "October 26, 2016",
+          "rating": 2.5,
+          "comments": "Ok so four of us came. One more later who didn't order becauase it's so expensive and simple. Seriously, a bunch of meat albeit you can sample beforehand on rye/white/wheat bread. Cheese extra. Pickles free, you can just ask them at the pickup counter. But seriously 20 bucks gone for an non-flavored half sandwich. And a line that is long, especially if you want seating. I'm down to just take a quick look where Sally and Harry sat and leave to the other delis all around NYC. Oh and they accept Samsung pay."
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Roberta's Pizza",
+      "neighbourhood": "Brooklyn",
+      "photograph": "https://www.thegardengrazer.com/wp-content/uploads/2021/01/vegan-meatloaf-plate-75.jpg",
+      "address": "kuthuparamba, kathiroor 670708",
+      "latlng": {
+        "lat": 40.705089,
+        "lng": -73.933585
+      },
+      "cuisine_type": "Pizza",
+      "operating_hours": {
+        "Monday": "11:00 am - 12:00 am",
+        "Tuesday": "11:00 am - 12:00 am",
+        "Wednesday": "11:00 am - 12:00 am",
+        "Thursday": "11:00 am - 12:00 am",
+        "Friday": "11:00 am - 12:00 am",
+        "Saturday": "10:00 am - 12:00 am",
+        "Sunday": "10:00 am - 12:00 am"
+      },
+      "reviews": [
+        {
+          "name": "Laurel",
+          "date": "October 26, 2016",
+          "rating": 4,
+          "comments": "The pizza is fantastic, not THE best I've ever had, but would definitely go back since it has great food and great ambiance. Definitely worth going to. It has A LOT of hype in the New York food scene, and I question if it deserves all of it, but it's still a totally great spot to hit up when in the area!!"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Honey Cakes",
+      "neighbourhood": "Indian",
+      "photograph": "https://th.bing.com/th/id/R.b476b328e00d96a80b835d27d6c17f76?rik=UlCNUr1c5OAuYg&riu=http%3a%2f%2fclv.h-cdn.co%2fassets%2f17%2f09%2f1488469820-ripe-for-pick-raspberry-cheesecake-0417.jpg&ehk=AvZEzq74tPVWqRYB00eWI78PgYk1JdMyFoCy5AUs0js%3d&risl=&pid=ImgRaw&r=0",
+      "address": "keezhoor iritty opposit vaazhunnavr school",
+      "latlng": {
+        "lat": 40.674925,
+        "lng": -74.016162
+      },
+      "cuisine_type": "Indian",
+      "operating_hours": {
+        "Monday": "Closed",
+        "Tuesday": "12:00 pm - 10:00 pm",
+        "Wednesday": "12:00 pm - 10:00 pm",
+        "Thursday": "12:00 pm - 10:00 pm",
+        "Friday": "12:00 pm - 11:00 pm",
+        "Saturday": "12:00 pm - 11:00 pm",
+        "Sunday": "12:00 pm - 9:00 pm"
+      },
+      "reviews": [
+        {
+          "name": "Ai-Mei",
+          "date": "October 26, 2016",
+          "rating": 4,
+          "comments": "mmmmmm, what a gem this is in bklyn! I loveeee how soft their brisket is here. Their pork tacos are to die for, their different variety of ribs and lastly, their lamb is not gamey at all. Super wallet friendly for the amount they give you. I highly recommend this spot- after eating here, you can definitely walk over for Steve's key lime pies."
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "The Dutch",
+      "neighbourhood": "Manhattan",
+      "photograph": "https://th.bing.com/th/id/R.9ab0991865a52f57e1d3c3d18684ae6d?rik=lp6k2PDMvNHnPQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-8TcmeJw0zmo%2fUrim443NzTI%2fAAAAAAAAAOE%2fAbhMJvxJVIo%2fs1600%2fGold-Bronze-Metallic-Wedding-Table-decoration.jpg&ehk=E%2f%2fNmRtCPRrvnyvxPkeiiAqamW%2fluH0tgDmJ79Br9t0%3d&risl=&pid=ImgRaw&r=0",
+      "address": "131 pallikkunn, NY 10012 malur mattannur",
+      "latlng": {
+        "lat": 40.726584,
+        "lng": -74.002082
+      },
+      "cuisine_type": "American Indian Asian",
+      "operating_hours": {
+        "Monday": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
+        "Tuesday": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
+        "Wednesday": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
+        "Thursday": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
+        "Friday": "11:30 am - 3:00 pm, 5:30 pm - 11:30 pm",
+        "Saturday": "10:00 am - 3:00 pm, 5:30 pm - 11:30 pm",
+        "Sunday": "10:00 am - 3:00 pm, 5:30 pm - 11:00 pm"
+      },
+      "reviews": [
+        {
+          "name": "Lori",
+          "date": "October 26, 2016",
+          "rating": 4,
+          "comments": "Aside from the slightly claustrophobic dining area and the fact that you may have difficulty hearing your dining companion, I'd return to The Dutch without hesitation. The food is surprisingly well-executed and conceived, and our dinner service flowed smoothly without a hitch. Just make sure to get a reservation in advance, as I'm sure more than just a few other people will have the same idea."
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Mu Ramen",
+      "neighbourhood": "Bombay Shiwer",
+      "photograph": "https://th.bing.com/th/id/OIP.0A6UiPvoUiAFXwqoyWCBFAHaLH?w=800&h=1200&rs=1&pid=ImgDetMain",
+      "address": "Kuthuparamba near babe flms ",
+      "latlng": {
+        "lat": 40.743797,
+        "lng": -73.950652
+      },
+      "cuisine_type": "Asian",
+      "operating_hours": {
+        "Monday": "5:00 pm - 10:00 pm",
+        "Tuesday": "5:00 pm - 10:00 pm",
+        "Wednesday": "5:00 pm - 10:00 pm",
+        "Thursday": "5:00 pm - 10:00 pm",
+        "Friday": "5:00 pm - 11:00 pm",
+        "Saturday": "5:00 pm - 11:00 pm",
+        "Sunday": "5:00 pm - 10:00 pm"
+      },
+      "reviews": [
+        {
+          "name": "Sally",
+          "date": "October 26, 2016",
+          "rating": 4,
+          "comments": "One of the tastiest and most unique ramen places I've been to in NYC, but also the priciest. I think overall its worth the try. Not an everyday casual ramen shop though."
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Max Chelios",
+      "neighbourhood": "Italian",
+      "photograph": "https://i.postimg.cc/2j26WqJ8/Add-2.jpg",
+      "address": "Kolkata, India",
+      "latlng": {
+        "lat": "56",
+        "lng": "898"
+      },
+      "cuisine_type": "American",
+      "operating_hours": {
+        "Monday": "9AM to 9PM",
+        "Tuesday": "9AM to 9PM",
+        "Wednesday": "9AM to 9PM",
+        "Thursday": "9AM to 9PM",
+        "Friday": "9AM to 9PM",
+        "Saturday": "12AM to 6AM",
+        "Sunday": "12AM to 6AM"
+      },
+      "reviews": [
+        {
+          "name": "Mehg",
+          "date": "23-09-2004",
+          "rating": "4",
+          "comments": "Not Bad"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Gabrier Chio's Reqw",
+      "neighbourhood": "Mexican",
+      "photograph": "https://i.postimg.cc/8kKp52J7/Add-3.jpg",
+      "address": "Kerala, Kochin",
+      "latlng": {
+        "lat": "56",
+        "lng": "898"
+      },
+      "cuisine_type": "Uropian",
+      "operating_hours": {
+        "Monday": "12AM to 9PM",
+        "Tuesday": "12AM to 9PM",
+        "Wednesday": "12AM to 9PM",
+        "Thursday": "12AM to 9PM",
+        "Friday": "12AM to 9PM",
+        "Saturday": "12AM to 9PM",
+        "Sunday": "Off"
+      },
+      "reviews": [
+        {
+          "name": "Ererty",
+          "date": "23-09-2004",
+          "rating": "4",
+          "comments": "Happyyy!!!!!!!!!!"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Seyl Mogfeird",
+      "neighbourhood": "China",
+      "photograph": "https://i.postimg.cc/ht8NJmy2/Add-Res-2.webp",
+      "address": "Banguluru, karnataka",
+      "latlng": {
+        "lat": "56",
+        "lng": "898"
+      },
+      "cuisine_type": "Chiana",
+      "operating_hours": {
+        "Monday": "9AM to 6PM",
+        "Tuesday": "9AM to 6PM",
+        "Wednesday": "9AM to 6PM",
+        "Thursday": "9AM to 6PM",
+        "Friday": "9AM to 6PM",
+        "Saturday": "9AM to 6PM",
+        "Sunday": "Off"
+      },
+      "reviews": [
+        {
+          "name": "Molly",
+          "date": "23-09-2004",
+          "rating": "4",
+          "comments": "Happiiii!!!!!!!!!!!"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Farm Doodios waillinh",
+      "neighbourhood": "England",
+      "photograph": "https://i.postimg.cc/vZzMJCs8/Add-4.png",
+      "address": "Benguluru, Karnataka",
+      "latlng": {
+        "lat": "56",
+        "lng": "898"
+      },
+      "cuisine_type": "American",
+      "operating_hours": {
+        "Monday": "9AM to 9PM",
+        "Tuesday": "9AM to 9PM",
+        "Wednesday": "9AM to 9PM",
+        "Thursday": "9AM to 9PM",
+        "Friday": "9AM to 9PM",
+        "Saturday": "9AM to 9PM",
+        "Sunday": "9AM to 9PM"
+      },
+      "reviews": [
+        {
+          "name": "Megha",
+          "date": "23-09-2004",
+          "rating": "4",
+          "comments": "Happyyy!!!!!!!!!!"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Arabia Kareem",
+      "neighbourhood": "Arabian",
+      "photograph": "https://i.postimg.cc/X7kTqFDQ/arabian.jpg",
+      "address": "Kerala, Kozhikode",
+      "latlng": {
+        "lat": "56",
+        "lng": "898"
+      },
+      "cuisine_type": "Arabian",
+      "operating_hours": {
+        "Monday": "9AM to 9PM",
+        "Tuesday": "9AM to 9PM",
+        "Wednesday": "9AM to 9PM",
+        "Thursday": "9AM to 9PM",
+        "Friday": "9AM to 9PM",
+        "Saturday": "9AM to 9PM",
+        "Sunday": "9AM to 9PM"
+      },
+      "reviews": [
+        {
+          "name": "Salman",
+          "date": "23-09-2004",
+          "rating": "4",
+          "comments": "Not Bad"
+        }
+      ]
+    }
+  ]
+}

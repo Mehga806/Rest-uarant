@@ -1,0 +1,75 @@
+<div class="container mt-5 mb-3 border border-light p-3">
+    <form #updateRestForm="ngForm">
+   <div class="row">
+           <h3 class="text-dark text-center mb-3">Update Restuarant Details</h3>
+           <div class="col-md-6">
+
+           <div class="mb-2">
+            <input [(ngModel)] ="restDetails['id']"  type="text" name="id" placeholder="Restuarant Id" class="form-control">
+           </div>
+
+           <div class="mb-2">
+            <input [(ngModel)] ="restDetails.neighborhood"  type="text" name="neighbourhood" placeholder="Restuarant neighbourhood" class="form-control">
+           </div>
+
+           <div class="mb-2">
+            <input [(ngModel)] ="restDetails['photograph']"  type="text" name="Photograph" placeholder="Restuarant Image" class="form-control">
+           </div>
+
+           <div class="mb-2" *ngIf="restDetails && restDetails.operating_hours">
+            <label class="text-dark mb-2" for="">Operating Hours</label>
+            <input [(ngModel)] ="restDetails['operating_hours']['Monday']"   name="Monday" type="text" placeholder="Monday" class="form-control col-8 d-inline mb-2">
+            <input [(ngModel)] ="restDetails['operating_hours']['Tuesday']"  name="Tuesday" type="text" placeholder="Tuesday" class="form-control col-8 d-inline mb-2">
+            <input [(ngModel)] ="restDetails['operating_hours']['Wednesday']"  name="Wednesday" type="text" placeholder="Wednesday" class="form-control col-8 d-inline mb-2">
+            <input [(ngModel)] ="restDetails['operating_hours']['Thursday']"   name="Thursday" type="text" placeholder="Thursday" class="form-control col-8 d-inline mb-2">
+            <input [(ngModel)] ="restDetails['operating_hours']['Friday']"  name="Friday" type="text" placeholder="Friday" class="form-control col-8 d-inline mb-2">
+            <input [(ngModel)] ="restDetails['operating_hours']['Saturday']"  name="Saturday" type="text" placeholder="Saturday" class="form-control col-8 d-inline mb-2">
+            <input [(ngModel)] ="restDetails['operating_hours']['Sunday']"  name="Sunday" type="text" placeholder="Sunday" class="form-control col-8 d-inline mb-2">
+           </div>
+
+           </div>
+
+   <div class="col-md-6">
+    <div class="mb-2">
+        <input [(ngModel)] ="restDetails['name']"   name="rName" type="text" placeholder="Restuarant Name" class="form-control">
+    </div>
+
+    <div class="mb-2">
+        <input [(ngModel)] ="restDetails['address']"   name="address" type="text" placeholder="Restuarant Address" class="form-control">
+    </div>
+
+    <div class="mb-2">
+        <input [(ngModel)] ="restDetails['cuisine_type']"  name="cuisine_type" type="text" placeholder="Restuarant Cuisine Type" class="form-control">
+    </div>
+
+
+    <div class="mb-2">
+      
+        <div *ngFor = "let item of restDetails.reviews">
+            <label class="text-dark mb-2" for="">Reviews</label>
+            <input [(ngModel)] ="item['name']"  type="text" name="rvName" placeholder="Name" class="form-control mb-2">
+            <input [(ngModel)] ="item['date']"   type="text" name="date" placeholder="Date" class="form-control mb-2">
+            <input  [(ngModel)] ="item['rating']"  type="text" name="rating" placeholder="Rating" class="form-control mb-2">
+            <input  [(ngModel)] ="item['comments']"  type="text" name="comments" placeholder="Comments" class="form-control mb-2">
+        </div>
+
+    </div>
+
+
+<div class="mb-2" *ngIf="restDetails && restDetails.latlng">
+   <label class="text-dark mb-2" for="">Location</label>
+   <input [(ngModel)] ="restDetails['latlng']['lat']"  name="lat" type="text" placeholder="Latitude" class="form-control mb-2">
+   <input [(ngModel)] ="restDetails ['latlng']['lng']"  name="lng" type="text" placeholder="Longitude" class="form-control mb-2">
+</div>
+
+   </div>
+
+   <div class="text-center mt-3">
+    <button (click)="updateRestuarant(updateRestForm)" type="submit" class="btn btn-dark" >Update Restuarant </button>
+   </div>
+
+   </div>
+    </form>
+
+</div>
+
